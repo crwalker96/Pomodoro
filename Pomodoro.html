@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="Pomodoro.css">
+    </head>
+    <body>
+        <h1 id="title">FreeCodeCamp - Pomodoro Clock</h1>
+        <div id="timer-length">
+            <div class = "timer-set"  id = "session-set">
+                <h3 class = "set-text">SESSION LENGTH</h3>
+                <p><span class = "button">-</span>
+                <span class = "time-inc">25</span>
+                <span class = "button">+</span></p>
+            </div>
+            <div class = "timer-set" id = "break-set">
+                <h3 class = "set-text">BREAK LENGTH</h3>
+                <p><span class = "button">-</span>
+                <span class = "time-inc">5</span>
+                <span class = "button">+</span></p>
+            </div>
+        </div>
+        <div id = "clock-wrapper" class = "color-block" >
+            <div id = "clock-filler">
+                <svg id = 'svg-hourglass' height='200' width='200'></svg>
+            </div>
+            <h2 class = "clock-text"><span id = "sess-break">Session</span><br/><br /><span id = "clock-face">25</span></h2>
+        </div>
+        <div id="button-wrapper">
+            <button class = "color-block big-button" id = "start-stop">Start/Stop</button>
+            <button class = "color-block big-button" id = "reset">Reset</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="Pomodoro.js"></script>
+    </body>
+</html>
